@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>CMGTwitch</title>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- JQUERY import-->
+    <script src="js/lib/jquery-3.5.1.min.js"></script>
+    <!-- W3 import-->
+    <script src="js/lib/w3include.js"></script>
+    <!-- UIKIT imports-->
+    <link rel="stylesheet" href="css/lib/uikit.min.css" />
+    <script src="js/lib/uikit.min.js"></script>
+    <script src="js/lib/uikit-icons.min.js"></script>
+    <!-- ANIMISTA imports-->
+    <link rel="stylesheet" type="text/css" href="css/lib/animista.css">
+    <!-- BORIS imports-->
+    <script src="js/lib/boris.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/lib/boris.css">
+    <!-- YOUR OWN imports-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/script.js"></script>
+    <!-- site icon (very worth)-->
+    <link rel="icon" href="imgs/CMGT logo Cirlces.png">
+</head>
+
+<body>
+    <header>
+        <figure>
+            <a href="index.html">
+                <img src="imgs/CMGT logo white_blackbg.png" alt="CMGT logo image" width="160" height="160">
+                <p>CMGTwitch</p>
+            </a>
+        </figure>
+
+        <nav>
+            <div class="current-info">
+                <p class="week">Week 2.6</p>
+                <p class="next-class">Next class: Software Architecture</p>
+            </div>
+            <div class="join-button">
+                <button type="button" class="join"><a href="subject.html">Join</a></button>
+            </div>
+            <div class="user-tab">
+                <div class="user-info">
+                    <img src="icons/1564535_customer_user_userphoto_account_person_icon_notransparent.png" alt="Profile icon" width="100" height="100">
+                    <p>N Panovski - 492686 ▼</p>
+                </div>
+                <div class="engineer-info">
+                    <button type="button" class="stripe-engineer"></button>
+                    <p>Engineer (Year 2)</p>
+                </div>
+            </div>
+            <!-- UIKit dropdown for ease -->
+            <div uk-dropdown="mode: click">
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li><a href="invalid.html">Lecture attendance</a></li>
+                    <li><a href="invalid.html">MijnSaxion</a></li>
+                    <li><a href="invalid.html">Log out</a></li>
+                </ul>
+            </div>
+            <!-- -->
+        </nav>
+    </header>
+
+    <aside>
+        <div class="menu-item-top">
+            <div class="menu-item-header">
+                <p>Current modules</p>
+                <img src="icons/rightanglebracket_blue.png" alt="Angle bracket icon" >
+            </div>
+
+            <div class="menu-items-inside" hidden>
+                <a href="invalid.html">
+                    <div class="menu-item-subject">
+                            <button type="button" class="stripe-artist"></button>
+                            <button type="button" class="stripe-designer"></button>
+                            <button type="button" class="stripe-engineer"></button>
+                            <p>Personal Portfolio 2</p>
+                    </div>
+                </a>
+                <a href="subject.html">
+                    <div class="menu-item-subject">
+                        <button type="button" class="stripe-artist"></button>
+                        <button type="button" class="stripe-designer"></button>
+                        <button type="button" class="stripe-engineer"></button>
+                        <p>UI/UX Advanced</p>
+                    </div>
+                </a>
+                <a href="invalid.html">
+                    <div class="menu-item-subject">
+                        <button type="button" class="stripe-inactive"></button>
+                        <button type="button" class="stripe-inactive"></button>
+                        <button type="button" class="stripe-engineer"></button>
+                        <p>Software Architecture</p>
+                    </div>
+                </a>
+                <a href="invalid.html">
+                    <div class="menu-item-subject">
+                        <button type="button" class="stripe-inactive"></button>
+                        <button type="button" class="stripe-inactive"></button>
+                        <button type="button" class="stripe-engineer"></button>
+                        <p>3D Rendering</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="menu-item-top">
+            <div class="menu-item-header">
+                <p>Past modules</p>
+                <img src="icons/rightanglebracket_blue.png" alt="Angle bracket icon" >
+            </div>
+        </div>
+        <div class="menu-item-top">
+            <div class="menu-item-header">
+                <p>Upcoming modules</p>
+                <img src="icons/rightanglebracket_blue.png" alt="Angle bracket icon" >
+            </div>
+        </div>
+    </aside>
+
+    <main>
+        <div class="main-title-header">
+            <p>Announcements</p>
+        </div>
+        <div class="main-item-header">
+            <p>CMGT Announcements (General)</p>
+        </div>
+        <article>
+            <p><a href="invalid.html">• New offbrand lecture recording - Blackboard</a></p>
+        </article>
+
+        <div class="main-item-header">
+            <p>Software Architecture</p>
+        </div>
+        <article>
+            <p><a href="invalid.html">• Unit test lecture + samples uploaded</a></p>
+        </article>
+
+    </main>
+
+    <section id="template" hidden>
+        <!-- 1 section in .template = 1 page -->
+        <!-- w3-include-html attr used to send bulky HTML for different pages to different .html-s -->
+    </section>
+</body>
+
+</html>

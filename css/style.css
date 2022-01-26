@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+@font-face {
+    font-family: 'MidnightKernboy';
+    src: url('../fonts/MidnightKernboy.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+html {
+    background-image: url("../imgs/large_cmgt_logo_background_black.png");
+    background-position: center center;
+    background-repeat: repeat;
+}
+
+/* !important basically overwirte anything set in UIkit */
+
+p,form *{
+    color: #FFFFFF;
+}
+
+body {
+
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+
+    font-family: "Montserrat" !important;
+    font-size: 24px !important;
+    line-height: 24px !important;
+
+    margin-bottom: 2em;
+}
+
+header>figure>a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    flex: 0 1 10%;
+}
+
+header>figure>a * {
+    margin: 2em;
+}
+
+header>figure p {
+    font-family: "MidnightKernboy" !important;
+    font-size:28px !important;
+    line-height:12px !important;
+    text-align: center;
+}
+
+a {
+    display: inline;
+    color: #FFFFFF;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+main a:hover {
+    background-color: #1198E6;
+    /* if something breaks blame this one first */
+    display: block;
+    width: 100%;
+    border-radius: 1em 0 0 1em;
+}
+
+header>nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60%;
+
+    background-color: #898989;
+
+    border-radius: 0 0 2em 2em;
+}
+
+header>nav>div {
+    
+    display: flex;
+    flex-direction: row;
+}
+
+/* specific divs (NOT the contained elements in them) */
+.current-info {
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 1em;
+}
+
+.join-button {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-tab {
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user-info, .engineer-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* <p> ignores this without !important BECAUSE boris.css uses !important on <p> margins */
+.user-info * {
+    margin: 0.4em !important;
+}
+
+.engineer-info {
+    justify-content: space-evenly;
+}
+
+header>nav .week, .next-class {
+    font-family: "Montserrat" !important;
+    font-size:24px !important;
+    line-height:32px !important;
+    text-align: center;
+    align-self: center;
+}
+
+header>nav .week {
+    color: #FFFFFF;
+}
+
+header>nav .next-class {
+    color: #FCD311;
+}
+
+button.join {
+    background-color: #11B0E6;
+
+    font-family: "Montserrat" !important;
+    font-size:24px !important;
+    line-height:24px !important;
+    text-align: center;
+    color: #FFFFFF;
+
+    border: 0px;
+
+    margin: 0.6em;
+    padding: 0.6em;
+}
+
+.stripe-artist, .stripe-designer, .stripe-engineer, .stripe-inactive {
+    border: 0px;
+
+    margin: 0 0.6em 0 0.6em;
+    padding: 2.4em 1.2em;
+    display: inline;
+
+}
+
+.stripe-artist {
+    background-color: #E8273A;
+}
+
+.stripe-designer {
+    background-color: #4EBA47;  
+}
+
+.stripe-engineer {
+    background-color: #1198E6;
+}
+
+.stripe-inactive {
+    background-color: #454545;
+}
+
+aside:not(.right-aside) {
+    background-color: #898989;
+    border-radius: 0 2em 2em 0;
+
+    position: absolute;
+    left: 0px;
+    /* as good as fixed */
+    bottom: -15%;
+    max-width: 25%;
+    min-height: 40%;
+    /*max-height: 60%;*/
+    padding-top: 2em;
+
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+}
+
+.menu-item-top, .main-title-header {
+    font-family: "MidnightKernboy" !important;
+    font-size:28px !important;
+    line-height:60px !important;
+    background-color: #008E82;
+}
+
+/* not responsive at all without flex! */
+.menu-item-top {
+    min-width: 110%;
+    padding-left: 0.4em !important;
+}
+
+.menu-item-header {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.menu-item-subject {
+    background-color: #00AD82;
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+
+    font-family: "Montserrat" !important;
+    font-size:24px !important;
+    line-height:24px !important;
+    margin: 0.4em 0;
+}
+
+/* now this is terrible and please don't do it */
+aside img {
+    
+    transform:scale(0.6);
+}
+
+.main-title-header {
+    text-align: center;
+    margin: 1.2em 0 0.8em 0;
+}
+
+.main-item-header {
+    text-align: left;
+    margin-top: 0.8em;
+    padding-left: 0.6em;
+
+    font-family: "Montserrat" !important;
+    font-size:24px !important;
+    line-height:60px !important;
+    background-color: #00AD82;
+}
+
+main>article {
+    padding-left: 0.6em;
+    padding-top: 0.6em;
+
+    font-family: "Open Sans", sans-serif;
+    font-size:20px !important;
+    line-height:40px !important;
+}
+
+main {
+    background-color: #898989;
+    border-radius: 2em 2em 0 0;
+
+    position: absolute;
+    /* well optimized would go through more flexes I reckon, but that won't happen here */
+    right: 5%;
+    bottom: -25%;
+    width: 50%;
+
+    padding-bottom: 16em;
+}
+
+.uk-dropdown-nav li {
+    font-family: "Montserrat" !important;
+    font-size:24px !important;
+    line-height:60px !important;
+    background-color: #00AD82;
+    color: #FFFFFF;
+
+    margin: 0.4em 0;
+}
