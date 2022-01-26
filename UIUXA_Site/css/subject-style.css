@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+@font-face {
+    font-family: 'MidnightKernboy';
+    src: url('../fonts/MidnightKernboy.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+}
+
+main {
+    padding-bottom: 2em;
+}
+
+.upcoming-lectures p, .content-inactive {
+    color: #454545;
+}
+
+.this-lecture p:hover, .right-aside article p:not(.content-inactive):hover {
+    background-color: #1198E6;
+    /* if something breaks blame this one first */
+    display: block;
+    width: 100%;
+    border-radius: 1em 0 0 1em;
+}
+
+.left-aside-closed {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.right-aside {
+    background-color: #898989;
+    border-radius: 2em 0 0 2em;
+
+    position: absolute;
+    right: 0px;
+    /* as good as fixed */
+    bottom: -15%;
+    max-width: 25%;
+    min-height: 40%;
+    /*max-height: 60%;*/
+    padding-top: 0.6em;
+}
+
+.right-aside article {
+    padding-left: 0.6em;
+    padding-top: 0.6em;
+
+    font-family: "Open Sans", sans-serif;
+    font-size:20px !important;
+    line-height:40px !important;
+    padding-bottom: 1.6em;
+}

@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>CMGTwitch</title>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- JQUERY import-->
+    <script src="js/lib/jquery-3.5.1.min.js"></script>
+    <!-- W3 import-->
+    <script src="js/lib/w3include.js"></script>
+    <!-- UIKIT imports-->
+    <link rel="stylesheet" href="css/lib/uikit.min.css" />
+    <script src="js/lib/uikit.min.js"></script>
+    <script src="js/lib/uikit-icons.min.js"></script>
+    <!-- ANIMISTA imports-->
+    <link rel="stylesheet" type="text/css" href="css/lib/animista.css">
+    <!-- BORIS imports-->
+    <script src="js/lib/boris.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/lib/boris.css">
+    <!-- YOUR OWN imports-->
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/subject-style.css">
+    <script src="js/script.js"></script>
+    <script src="js/this-lecture-nav.js"></script>
+    <!-- site icon (very worth)-->
+    <link rel="icon" href="imgs/CMGT logo Cirlces.png">
+</head>
+
+<body>
+    <header>
+        <figure>
+            <a href="index.html">
+                <img src="imgs/CMGT logo white_blackbg.png" alt="CMGT logo image" width="160" height="160">
+                <p>CMGTwitch</p>
+            </a>
+        </figure>
+
+        <nav>
+            <div class="current-info">
+                <p class="week">Week 2.6</p>
+                <p class="next-class">Next class: Software Architecture</p>
+            </div>
+            <div class="join-button">
+                <button type="button" class="join"><a href="subject.html">Join</a></button>
+            </div>
+            <div class="user-tab">
+                <div class="user-info">
+                    <img src="icons/1564535_customer_user_userphoto_account_person_icon_notransparent.png" alt="Profile icon" width="100" height="100">
+                    <p>N Panovski - 492686 ▼</p>
+                </div>
+                <div class="engineer-info">
+                    <button type="button" class="stripe-engineer"></button>
+                    <p>Engineer (Year 2)</p>
+                </div>
+            </div>
+            <!-- UIKit dropdown for ease -->
+            <div uk-dropdown="mode: click">
+                <ul class="uk-nav uk-dropdown-nav">
+                    <li><a href="invalid.html">Lecture attendance</a></li>
+                    <li><a href="invalid.html">MijnSaxion</a></li>
+                    <li><a href="invalid.html">Log out</a></li>
+                </ul>
+            </div>
+            <!-- -->
+        </nav>
+    </header>
+
+    <aside class="left-aside-open">
+        <div class="menu-item-top">
+            <div class="menu-item-header">
+                <p>Current modules</p>
+                <img src="icons/rightanglebracket_blue.png" alt="Angle bracket icon" >
+            </div>
+
+            <div class="menu-items-inside" hidden>
+                <a href="invalid.html">
+                    <div class="menu-item-subject">
+                            <button type="button" class="stripe-artist"></button>
+                            <button type="button" class="stripe-designer"></button>
+                            <button type="button" class="stripe-engineer"></button>
+                            <p>Personal Portfolio 2</p>
+                    </div>
+                </a>
+                <a href="subject.html">
+                    <div class="menu-item-subject">
+                        <button type="button" class="stripe-artist"></button>
+                        <button type="button" class="stripe-designer"></button>
+                        <button type="button" class="stripe-engineer"></button>
+                        <p>UI/UX Advanced</p>
+                    </div>
+                </a>
+                <a href="invalid.html">
+                    <div class="menu-item-subject">
+                        <button type="button" class="stripe-inactive"></button>
+                        <button type="button" class="stripe-inactive"></button>
+                        <button type="button" class="stripe-engineer"></button>
+                        <p>Software Architecture</p>
+                    </div>
+                </a>
+                <a href="invalid.html">
+                    <div class="menu-item-subject">
+                        <button type="button" class="stripe-inactive"></button>
+                        <button type="button" class="stripe-inactive"></button>
+                        <button type="button" class="stripe-engineer"></button>
+                        <p>3D Rendering</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="menu-item-top">
+            <div class="menu-item-header">
+                <p>Past modules</p>
+                <img src="icons/rightanglebracket_blue.png" alt="Angle bracket icon" >
+            </div>
+        </div>
+        <div class="menu-item-top">
+            <div class="menu-item-header">
+                <p>Upcoming modules</p>
+                <img src="icons/rightanglebracket_blue.png" alt="Angle bracket icon" >
+            </div>
+        </div>
+    </aside>
+
+    <aside class="left-aside-closed" hidden>
+        <div>
+            <img src="icons/rightanglebracket_blue.png" alt="Angle bracket icon" >
+        </div>
+    </aside>
+
+    <main>
+        <div class="main-title-header">
+            <p>Lectures - UI/UX Advanced</p>
+        </div>
+        <div class="main-item-header">
+            <p>This week</p>
+        </div>
+        <article class="this-lecture">
+            <p>• Week 6 - Experimental Design (A/B testing) - LIVE</p>
+        </article>
+
+        <div class="main-item-header">
+            <p>Past lectures</p>
+        </div>
+        <article>
+            <p><a href="#">• Week 5 - Unity UI/UX (Yvens)</a></p>
+        </article>
+        <article>
+            <p><a href="#">• Week 5 - Web implementation (Boris)</a></p>
+        </article>
+        <article>
+            <p><a href="#">• Week 4 - Kick-off + Recap + User journeys</a></p>
+        </article>
+
+        <div class="main-item-header">
+            <p>Upcoming lectures</p>
+        </div>
+        <article class="upcoming-lectures">
+            <p>• Week 7 - Questionnaires and Statistics</p>
+        </article>
+    </main>
+
+    <aside class="right-aside" hidden>
+        <div class="main-title-header">
+            <p>Table of contents</p>
+        </div>
+        <div>
+            <article>
+                <p class="content-inactive">• Why do we run tests?</p>
+                <p class="content-inactive">• Research methods</p>
+                <p class="content-inactive">• Experimental Design</p>
+                    <p>• A/B testing<button type="button" class="join"><a href="lecture.html">Join</a></button></p>
+                <p>• Take home points (Recap)</p>
+            </article>
+        </div>
+    </aside>
+</body>
+
+</html>
